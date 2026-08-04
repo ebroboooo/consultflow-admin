@@ -1,0 +1,6 @@
+{
+  "name": "SaaS Admin Dashboard",
+  "description": "Production-ready client management and analytics dashboard for consulting agencies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

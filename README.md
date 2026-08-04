@@ -172,7 +172,11 @@ The system adheres to a decoupled, client-first architecture separating visual p
 
 1. **Clone the Repository**:
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/ebramnakash/client-portal-saas-dashboard.git
+=======
+   git clone https://github.com/your-username/client-portal-saas-dashboard.git
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
    cd client-portal-saas-dashboard
    ```
 
@@ -207,11 +211,20 @@ The system adheres to a decoupled, client-first architecture separating visual p
 
 ## 🔑 Authentication Flow
 
+<<<<<<< HEAD
 The application includes a secure authentication interface (`/login`):
 
 - **User Sign-In**: Users enter their organization email address and password to log in.
 - **Protected Routes**: Navigating to protected routes (such as `/dashboard`) without an active session automatically redirects to `/login`.
 - **Session Persistence**: Authentication session state persists securely across page refreshes and browser tabs using encrypted storage handlers.
+=======
+The application comes pre-configured with a login page (`/login`) for demonstration:
+
+- **Demo Email**: `admin@saasportal.com`
+- **Demo Password**: `admin123`
+
+Navigating to protected routes without a valid session automatically triggers a redirect to `/login`. Session state persists securely in `localStorage` across page refreshes.
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
 
 ---
 
@@ -255,7 +268,17 @@ Reference template in `.env.example`:
 
 ## 🔥 Future Firebase Integration
 
+<<<<<<< HEAD
 This application is engineered with a modern, modular architecture that makes connecting to Firebase cloud services straightforward and efficient as a future enhancement. The authentication system and data storage layers are already decoupled, meaning we can seamlessly connect live Firebase Authentication and transition local storage to a secure Google Cloud Firestore database without needing to rebuild any user interface components, navigation routing, or page layouts.
+=======
+The repository includes pre-built abstractions in `src/services/firebase.ts` to allow instant migration to **Firebase Firestore** and **Firebase Authentication**:
+
+1. Populate credentials in `.env`.
+2. Connect `useLocalStorage` state updates to Firestore's `onSnapshot()` realtime stream.
+3. Switch `src/services/auth.ts` to use Firebase Auth SDK observers.
+
+*See [docs/FIREBASE_INTEGRATION.md](./docs/FIREBASE_INTEGRATION.md) for full setup instructions.*
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
 
 ---
 
@@ -325,12 +348,20 @@ Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for full detai
 
 ## 👤 Author & Acknowledgements
 
+<<<<<<< HEAD
 Developed with precision and engineering craft by **Ebram Nakash** ([ebram.nakashx@gmail.com](mailto:ebram.nakashx@gmail.com)). Special thanks to the open-source maintainers of React, Tailwind CSS, Vite, and Lucide Icons.
+=======
+Developed with precision and engineering craft by the Senior Engineering Lead. Special thanks to the open-source maintainers of React, Tailwind CSS, Vite, and Lucide Icons.
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
 
 ---
 
 <div align="center">
 
+<<<<<<< HEAD
 **[⭐ Star this repository on GitHub](https://github.com/ebramnakash/client-portal-saas-dashboard)** if you found it useful!
+=======
+**[⭐ Star this repository on GitHub](https://github.com/your-username/client-portal-saas-dashboard)** if you found it useful!
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
 
 </div>

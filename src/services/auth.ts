@@ -26,7 +26,11 @@ export async function loginWithEmailAndPassword(
   credentials: LoginCredentials
 ): Promise<User> {
   // Simulate network delay for realistic SaaS loading states
+<<<<<<< HEAD
   await new Promise((resolve) => setTimeout(resolve, 600));
+=======
+  await new Promise((resolve) => setTimeout(resolve, 800));
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
 
   const trimmedEmail = credentials.email.trim().toLowerCase();
 
@@ -34,6 +38,7 @@ export async function loginWithEmailAndPassword(
     throw new Error('Email and password are required.');
   }
 
+<<<<<<< HEAD
   if (!trimmedEmail.includes('@') || credentials.password.length < 3) {
     throw new Error('Invalid credentials format. Please enter a valid email and password.');
   }
@@ -47,6 +52,19 @@ export async function loginWithEmailAndPassword(
     displayName: formattedName || 'Portal Admin',
     role: 'admin',
     createdAt: new Date().toISOString(),
+=======
+  if (trimmedEmail !== MOCK_ADMIN_USER.email) {
+    throw new Error('Invalid email address or user does not exist.');
+  }
+
+  if (credentials.password !== MOCK_PASSWORD) {
+    throw new Error('Invalid password. Please check your credentials.');
+  }
+
+  return {
+    ...MOCK_ADMIN_USER,
+    email: trimmedEmail,
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
   };
 }
 

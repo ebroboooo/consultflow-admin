@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
+<<<<<<< HEAD
 import { Mail, Lock, Eye, EyeOff, Sparkles, Shield, CheckCircle2 } from 'lucide-react';
+=======
+import { Mail, Lock, Eye, EyeOff, Sparkles, Shield, KeyRound, CheckCircle2 } from 'lucide-react';
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
 import { useAuth } from '../../hooks/useAuth';
 import { useToast } from '../../contexts/ToastContext';
 import { Input } from '../../components/Input/Input';
@@ -23,6 +27,16 @@ export const LoginPage: React.FC = () => {
     return <Navigate to="/dashboard" replace />;
   }
 
+<<<<<<< HEAD
+=======
+  const handleFillDemo = () => {
+    setEmail('admin@example.com');
+    setPassword('password123');
+    setErrorMessage(null);
+    showInfo('Demo Credentials Applied', 'Click "Sign In" or press Enter to access the dashboard.');
+  };
+
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMessage(null);
@@ -41,7 +55,11 @@ export const LoginPage: React.FC = () => {
         rememberMe,
       });
 
+<<<<<<< HEAD
       showSuccess('Welcome Back!', 'Successfully authenticated to Client Portal.');
+=======
+      showSuccess('Welcome Back!', 'Successfully authenticated to Sarah M. Consulting Agency Portal.');
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
       navigate('/dashboard', { replace: true });
     } catch (err: any) {
       const msg = err?.message || 'Invalid credentials. Please verify your email and password.';
@@ -71,6 +89,27 @@ export const LoginPage: React.FC = () => {
           </p>
         </div>
 
+<<<<<<< HEAD
+=======
+        {/* Demo Credentials Helper Pill */}
+        <div className="mb-6 p-3.5 rounded-2xl bg-blue-950/40 border border-blue-800/40 text-xs text-blue-200 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2.5 min-w-0">
+            <KeyRound className="w-4 h-4 text-blue-400 flex-shrink-0" />
+            <div className="truncate">
+              <p className="font-semibold text-blue-100">Quick Demo Credentials</p>
+              <p className="text-[11px] text-blue-300/80 truncate">admin@example.com / password123</p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={handleFillDemo}
+            className="px-2.5 py-1 text-[11px] font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors flex-shrink-0 shadow-sm"
+          >
+            Auto-fill
+          </button>
+        </div>
+
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
         {/* Error Alert */}
         {errorMessage && (
           <div className="mb-6 p-3.5 rounded-xl bg-rose-950/60 border border-rose-800/60 text-xs text-rose-300 flex items-start gap-2.5 animate-in slide-in-from-top-1">
@@ -87,7 +126,11 @@ export const LoginPage: React.FC = () => {
           <Input
             label="Email Address"
             type="email"
+<<<<<<< HEAD
             placeholder="you@company.com"
+=======
+            placeholder="admin@example.com"
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             leftIcon={<Mail className="w-4 h-4" />}
@@ -132,8 +175,13 @@ export const LoginPage: React.FC = () => {
               type="button"
               onClick={() =>
                 showInfo(
+<<<<<<< HEAD
                   'Password Reset Instructions',
                   'Please contact your organization administrator to reset your account password.'
+=======
+                  'Password Reset',
+                  'For demo purposes, use "password123" or click the Auto-fill button above.'
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
                 )
               }
               className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
@@ -155,10 +203,17 @@ export const LoginPage: React.FC = () => {
 
         {/* Footer info */}
         <div className="mt-8 pt-6 border-t border-slate-800/80 text-center text-xs text-slate-500">
+<<<<<<< HEAD
           <p>Client Operations & SaaS Analytics Portal</p>
           <div className="flex items-center justify-center gap-2 mt-2 text-[11px] text-slate-400">
             <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
             <span>Secure Encrypted Session</span>
+=======
+          <p>Sarah M. Consulting Agency Portal</p>
+          <div className="flex items-center justify-center gap-2 mt-2 text-[11px] text-slate-400">
+            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+            <span>Firebase Auth Architecture Prototype</span>
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
           </div>
         </div>
       </div>

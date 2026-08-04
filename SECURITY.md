@@ -17,7 +17,11 @@ We take the security of our application very seriously. If you discover a securi
 
 ### How to Report
 
+<<<<<<< HEAD
 1. Email your report directly to `ebram.nakashx@gmail.com` or contact the repository maintainers through GitHub Private Vulnerability Reporting.
+=======
+1. Email your report directly to `security@example.com` or contact the repository maintainers through GitHub Private Vulnerability Reporting.
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
 2. Include detailed information:
    - Description of the vulnerability or security impact
    - Step-by-step instructions or proof-of-concept code to reproduce the issue

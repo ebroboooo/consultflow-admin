@@ -9,7 +9,11 @@ Thank you for your interest in contributing to the **Client Portal & SaaS Analyt
 1. **Fork the Repository**: Create your own copy of the repository on GitHub.
 2. **Clone the Fork**:
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/ebramnakash/client-portal-saas-dashboard.git
+=======
+   git clone https://github.com/your-username/client-portal-saas-dashboard.git
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
    cd client-portal-saas-dashboard
    ```
 3. **Install Dependencies**:

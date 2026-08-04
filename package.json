@@ -15,6 +15,7 @@
     "mrr-tracker",
     "crm"
   ],
+<<<<<<< HEAD
   "author": "Ebram Nakash <ebram.nakashx@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -25,6 +26,10 @@
   "bugs": {
     "url": "https://github.com/ebramnakash/client-portal-saas-dashboard/issues"
   },
+=======
+  "author": "Enterprise SaaS Solutions Lead",
+  "license": "MIT",
+>>>>>>> 8ab1d2751e078b826be1f51769b6c41bf22f1bf5
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
